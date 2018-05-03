@@ -1,10 +1,15 @@
 # juhi-and-jani
 This is a test repository for Juhi and Jani
 
-## First test
-Please write something here:
+def firsttest():
+    print("Please write something here:")
+
+
+firsttest()
+
 
 >>>
 
 ### After that, please commit and push the changes.
+
 
