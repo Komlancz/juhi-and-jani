@@ -21,7 +21,6 @@ def random_table(table, check_table, color, original):
     while diff not in range(1, 4):
         try:
             os.system("clear")
-            print('Itt a Máté és ez egy teszt kommit.')
             diff = int(input("Please choose difficulty firt: \n\
                         1, Easy \n\
                         2, Medium \n\
