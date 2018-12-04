@@ -21,6 +21,7 @@ def random_table(table, check_table, color, original):
     while diff not in range(1, 4):
         try:
             os.system("clear")
+            print('Itt a Máté és ez egy teszt kommit.')
             diff = int(input("Please choose difficulty firt: \n\
                         1, Easy \n\
                         2, Medium \n\
@@ -67,7 +68,7 @@ def game(table, check_table, greencolor, redcolor):
             main()
         elif row in numbers:
             pass
-       
+
         try:                          # Error handling: if the user gives letter instead of number
             row = int(row)
             column = int(input("Column:"))
@@ -77,13 +78,13 @@ def game(table, check_table, greencolor, redcolor):
             time.sleep(2)
             os.system("clear")
             continue
-       
+
         if column not in numbers or row not in numbers or guess not in numbers:
             print("Give me number between ONE AND NINE!")
             time.sleep(2)                # Error handling 2: if the user give us bigger number that we accept
             os.system("clear")
             continue
-       
+
         if column in (1, 2, 3):
             column += 1          # Add +1 or +2 or +3 for the users number to choose the correct index item in the list
         elif column in (4, 5, 6):
